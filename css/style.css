@@ -41,12 +41,6 @@ nav ul li a {
     background-repeat: no-repeat;
     background-image: url('../images/optimized-banner-1920x600.jpg');
 }
-
-/* Mobile banner fix */
-@media (max-width: 768px) {
-  .banner {
-    height: 200px;
-}
 .action-button {
     background-color: gold;
     color: black;
