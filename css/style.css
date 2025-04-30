@@ -39,6 +39,7 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url('../images/optimized-banner-1920x600.jpg');
 }
 
 /* Mobile banner fix */
