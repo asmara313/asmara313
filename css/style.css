@@ -176,14 +176,6 @@ footer {
     padding: 10px 20px;
     margin-top: 20px;
 }
-.banner {
-    width: 100%;
-    height: 600px;
-    margin-top: 20px;
-    background-size: cover;
-    background-position: center;
-    background-image: url('your-banner-image.jpg');
-}
 .contact-container {
     display: flex;
     justify-content: center;
