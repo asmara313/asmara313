@@ -33,15 +33,19 @@ nav ul li a {
 }
 /* Banner Section Fix */
 .banner {
-    position: relative;
     width: 100%;
-    overflow: hidden;
+    height: 400px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('your-banner-image.jpg');
 }
 
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
+/* Mobile banner fix */
+@media (max-width: 768px) {
+  .banner {
+    height: 200px;
 }
 .action-button {
     background-color: gold;
