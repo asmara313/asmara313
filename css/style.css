@@ -39,7 +39,6 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('your-banner-image.jpg');
 }
 
 /* Mobile banner fix */
