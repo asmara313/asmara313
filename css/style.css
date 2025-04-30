@@ -281,5 +281,11 @@ html {
     .contact-card {
         width: 90%;
     }
+    @media (max-width: 768px) {
+  .banner {
+    height: 200px;
+  }
+}
+
 }
 
