@@ -296,18 +296,4 @@ html {
         width: 90%;
     }
 }
-/* Mobile banner fix */
-@media (max-width: 768px) {
-  .banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
 
-  .banner {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-  }
-}
