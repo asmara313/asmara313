@@ -277,10 +277,16 @@ html {
     .contact-card {
         width: 90%;
     }
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
   .banner {
-    height: 200px;
+    height: 250px;
+    margin-bottom: 0;
   }
+  .action-buttons-container {
+    margin-top: -30px; /* Adjust this based on your space */
+  }
+}
+
 }
 
 }
