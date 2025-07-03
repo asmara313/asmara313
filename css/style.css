@@ -4,16 +4,64 @@ body {
     font-family: Arial, sans-serif;
 }
 .banner {
+  position: relative;
   width: 100%;
-  height: 400px; /* You can adjust height */
-  background-image: url('your-banner-image.jpg'); /* replace with your image path */
+  height: 400px; /* or adjust as needed */
+  overflow: hidden;
+}
+
+/* Create a pseudo-element for the background animation */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-banner-image.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transform: scale(1);
+  animation: zoomPan 20s ease-in-out infinite alternate;
+  z-index: 0;
 }
+
+/* Optional overlay for darkening the image (if needed) */
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+  z-index: 1;
+}
+
+/* Any content inside the banner stays on top */
+.banner > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animation keyframes */
+@keyframes zoomPan {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.2) translate(-5%, -5%);
+  }
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .banner {
+    height: 250px;
+  }
+}
+
 
 /* Mobile fix */
 @media (max-width: 768px) {
